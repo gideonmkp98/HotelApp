@@ -17,7 +17,7 @@ class CreateGuestsTable extends Migration
             $table->id();
             $table->integer('user')->nullable();
             $table->string( 'firstname');
-            $table->string('middlename');
+            $table->string('middlename')->nullable()->default('-');
             $table->string('lastname');
             $table->date('date_of_birth');
             $table->bigInteger('phone');

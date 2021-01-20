@@ -33,7 +33,8 @@ class GuestController extends Controller
      */
     public function create()
     {
-        //
+        $users = User::all();
+        return view('admin.guest.create', compact('users'));
     }
 
     /**
@@ -44,7 +45,38 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'user' => 'nullable',
+            'firstname' => 'required',
+            'middlename' => 'nullable',
+            'lastname' => 'required',
+            'date_of_birth' => 'required',
+            'phone' => 'required',
+            'streetname' => 'required',
+            'postal_code' => 'required',
+            'city' => 'required',
+            'country' => 'required',
+            'active' => 'required',
+        ]);
+
+        $dob = new \DateTime($request['date_of_birth']);
+
+        $guest = new Guest;
+        $guest->user = $request->user;
+        $guest->firstname = $request->firstname;
+        $guest->middlename = $request->middlename;
+        $guest->lastname = $request->lastname;
+        $guest->date_of_birth = $dob->format('Y-m-d');
+        $guest->phone = $request->phone;
+        $guest->streetname = $request->streetname;
+        $guest->postal_code = $request->postal_code;
+        $guest->city = $request->city;
+        $guest->country = $request->country;
+        $guest->active = $request->active === 'true' ? true: false;
+        $guest->save();
+
+        return redirect()->route('guests.index')
+            ->with('success','Guest has been added successfully.');
     }
 
     /**
