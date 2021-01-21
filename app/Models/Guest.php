@@ -26,7 +26,7 @@ class Guest extends Model
     protected $dates = ['date_of_birth'];
 
     public function user() {
-        return $this->hasOne(User::class, 'id','user');
+        return $this->hasOne(User::class, 'id','user_id');
     }
 
     protected $with = [

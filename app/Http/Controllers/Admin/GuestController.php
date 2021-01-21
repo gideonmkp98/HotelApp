@@ -62,7 +62,7 @@ class GuestController extends Controller
         $dob = new \DateTime($request['date_of_birth']);
 
         $guest = new Guest;
-        $guest->user = $request->user;
+        $guest->user_id = $request->user;
         $guest->firstname = $request->firstname;
         $guest->middlename = $request->middlename;
         $guest->lastname = $request->lastname;
@@ -87,7 +87,7 @@ class GuestController extends Controller
      */
     public function show(Guest $guest)
     {
-        return view('admin.guest.view',compact('guest'));
+        return view('admin.guest.show',compact('guest'));
     }
 
     /**
@@ -129,7 +129,7 @@ class GuestController extends Controller
         $dob = new \DateTime($request['date_of_birth']);
 
         $guest = Guest::find($id);
-        $guest->user = $request->user;
+        $guest->user_id = $request->user;
         $guest->firstname = $request->firstname;
         $guest->middlename = $request->middlename;
         $guest->lastname = $request->lastname;

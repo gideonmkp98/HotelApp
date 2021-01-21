@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2be55a7c-fc5d-4d51-81ce-8371ec1aa36a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/guest/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Guest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_195220_create_guests_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_195220_create_guests_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/guest/actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guest/actions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/guest/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guest/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/guest/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guest/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +154,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1nFGlvBqATv0C9FVCgLVqYtmMPS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -172,11 +194,24 @@
       <workItem from="1611066572429" duration="8877000" />
       <workItem from="1611092140241" duration="9391000" />
       <workItem from="1611139140956" duration="3728000" />
+      <workItem from="1611191087694" duration="4709000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611094217136">
@@ -191,10 +226,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="636" y="442" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1611156243098" />
-    <state x="616" y="270" key="run.anything.popup" timestamp="1611072419593">
+    <state x="616" y="270" key="run.anything.popup" timestamp="1611193065089">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="616" y="270" key="run.anything.popup/1920.0.1600.860/0.0.1920.1160@0.0.1920.1160" timestamp="1611072419593" />
+    <state x="616" y="270" key="run.anything.popup/1920.0.1600.860/0.0.1920.1160@0.0.1920.1160" timestamp="1611193065089" />
     <state x="623" y="255" key="search.everywhere.popup" timestamp="1611002282186">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

@@ -26,7 +26,7 @@
                         <strong>User:</strong>
                         <select class="form-control" name="user" id="user">
                             @foreach($users as $user)
-                                <option value="{{$user->id}}" @if ($guest->user === $user->id) selected @endif>{{$user->email}}</option>
+                                <option value="{{$user->id}}" @if ($guest->user_id === $user->id) selected @endif>{{$user->email}}</option>
                             @endforeach
                         </select>
                         @error('room_type')
