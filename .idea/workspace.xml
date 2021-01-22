@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2be55a7c-fc5d-4d51-81ce-8371ec1aa36a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/guest/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/GuestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Guest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Guest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_195220_create_guests_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_195220_create_guests_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/guest/actions.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guest/actions.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/guest/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/guest/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Billing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Billing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_142420_create_reservations_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_142420_create_reservations_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_18_153242_create_billings_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_18_153242_create_billings_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminapp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminapp.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +193,8 @@
       <workItem from="1611066572429" duration="8877000" />
       <workItem from="1611092140241" duration="9391000" />
       <workItem from="1611139140956" duration="3728000" />
-      <workItem from="1611191087694" duration="4709000" />
+      <workItem from="1611191087694" duration="5240000" />
+      <workItem from="1611255418835" duration="20238000" />
     </task>
     <servers />
   </component>
@@ -214,10 +214,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611094217136">
+    <state x="690" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611259327192">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="690" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1600.860/0.0.1920.1160@0.0.1920.1160" timestamp="1611094217136" />
+    <state x="690" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1600.860/0.0.1920.1160@0.0.1920.1160" timestamp="1611259327192" />
     <state width="528" height="446" key="SwitcherDM" timestamp="1611007488606">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

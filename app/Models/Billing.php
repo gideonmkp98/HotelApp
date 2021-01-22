@@ -10,17 +10,17 @@ class Billing extends Model
     use HasFactory;
 
     protected $fillable = [
-      'user',
+      'reservation_id',
       'room_charge',
       'is_payed',
       'credit_card'
     ];
 
-    public function user() {
-        return $this->hasOne(User::class, 'id','user');
+    public function reservation() {
+        return $this->hasOne(Reservation::class, 'id','reservation_id');
     }
 
     protected $with = [
-        'user',
+        'reservation',
     ];
 }

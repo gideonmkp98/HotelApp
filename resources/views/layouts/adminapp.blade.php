@@ -61,6 +61,12 @@
                             <a class="dropdown-item" href="{{route('rooms.index')}}">Rooms</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('reservations.index')}}">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('billings.index')}}">Billings</a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

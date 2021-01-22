@@ -10,15 +10,26 @@ class Reservation extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user',
+        'guest_id',
+        'room_id',
         'check_in_date',
         'check_out_date',
         'accepted',
         'number_of_guests'
     ];
 
-    public function user() {
-        return $this->hasOne(User::class, 'id','user');
+    protected $dates = ['check_in_date', 'check_out_date'];
+
+    public function guest() {
+        return $this->hasOne(Guest::class, 'id','guest_id');
     }
 
+    public function room() {
+        return $this->hasOne(Room::class, 'id', 'room_id');
+    }
+
+    protected $with = [
+        'guest',
+        'room',
+    ];
 }

@@ -32,6 +32,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'verified.admin']], 
     Route::post('/delete-room', ['App\Http\Controllers\Admin\RoomController','destroy']);
     Route::resource('/guests', 'App\Http\Controllers\Admin\GuestController');
     Route::post('/delete-guest', ['App\Http\Controllers\Admin\GuestController','destroy']);
+    Route::resource('/reservations', 'App\Http\Controllers\Admin\ReservationController');
+    Route::post('/delete-reservation', ['App\Http\Controllers\Admin\ReservationController','destroy']);
+    Route::resource('/billings', 'App\Http\Controllers\Admin\BillingController');
+    Route::post('/delete-billing', ['App\Http\Controllers\Admin\BillingController','destroy']);
+
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

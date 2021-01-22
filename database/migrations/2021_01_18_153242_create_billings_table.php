@@ -15,7 +15,7 @@ class CreateBillingsTable extends Migration
     {
         Schema::create('billings', function (Blueprint $table) {
             $table->id();
-            $table->string('user');
+            $table->integer('reservation_id');
             $table->integer('room_charge');
             $table->boolean('is_payed');
             $table->boolean('credit_card');
